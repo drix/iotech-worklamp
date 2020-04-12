@@ -63,8 +63,9 @@ void Light_turn_ON() {
 
   isLightON = true;
 
-  // set pwor to last saved value
-  Light_set_power(max(1,power));
+  // set pwor to last saved value, the min 10 is to avoid a shaken lamp whe switch on. 
+  // It can be solved by optimizing the set power function
+  Light_set_power(max(10,power));
   Mosquito_log("light turned ON");
 }
 
