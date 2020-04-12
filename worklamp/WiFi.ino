@@ -4,8 +4,8 @@
 #include <ArduinoOTA.h>
 #include <ESP8266WebServer.h>
 
-#define WIFI_SSID "casita"
-#define WIFI_PASS "mandarima"
+#define WIFI_SSID "****"
+#define WIFI_PASS "****"
 
 
 ESP8266WebServer server(8080);
